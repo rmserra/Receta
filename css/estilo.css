@@ -1,9 +1,8 @@
 nav
 	{
-		position: absolute;
-		right: 0;
-		top: 1em;
+		text-align: right;
     background-color: rgba(0,0,0,.7);
+		box-sizing: border-box;
 	}
 
 	nav ul
@@ -20,21 +19,22 @@ nav
 
 	nav li a, nav li span
 	{
-		display: block;
     text-decoration: none;
 		padding: 0em 1.5em;
 		letter-spacing: 0.20em;
 		font-size: 1.1em;
 		font-weight: 500;
-		outline: 0;
 		color: #FFF4E3;
 		font-family: 'Balsamiq Sans', cursive;
+		box-sizing: border-box;
 	}
 
 	nav li:hover a, nav li.active a, nav li.active span
 	{
     color: orange;
 		font-weight: bold;
+		font-size: 1.2em;
+		transition: all .15s ease-in-out;
 	}
 
 	nav .current_page_item a
@@ -49,55 +49,64 @@ body{
 }
 
 header{
-
-  padding: 0.1rem;
+  
   text-align: center;
-  width: 90%;
-  margin: 0.3% auto;
-  margin-top: 5rem;
+  width: 100%;
+  margin: auto;
   border-radius: 0.5rem;
 	font-family: 'Balsamiq Sans', cursive;
 	color: orange;
 	background-color: rgba(0, 0, 0, .7);
   font-size: 2rem;
 	font-weight: bolder;
+	box-sizing: border-box;
 }
+
 hr {
 	background-color: orange;
 }
+
+/*------MAIN------*/
 main {
-  background-color: rgba(0,0,0,.7);
-  width: 71%;
-  float: left;
-  margin-left: 5%;
 	color: white;
 	font-family: 'Hind Madurai', sans-serif;
-	padding: 1%;
-	font-size: 1.2rem;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .intro{
-	display: inline-flex;
-	margin: 1%;
+	text-align: center;
 }
 
 .intro p {
-	margin: 2%;
-	margin-top: 7%;
-	font-size: 1.2rem;
+	float: right;
 }
 
 .intro img{
 	border-radius: 3%;
+	width: 60%;
 }
+
+/*-----SECTION----*/
+section{
+	flex: 3;
+	min-width: 250px;
+	padding: 1%;
+	margin: 0.5%;
+	background-color: rgba(0,0,0,.7);
+}
+
+/*---ASIDE--- */
+
 aside{
   background-color: rgba(0,0,0,.7);
-  float: left;
-  width: 14.5%;
-  margin-left: 0.5%;
 	font-family: 'Hind Madurai', sans-serif;
 	color: white;
+	flex: 1;
+	min-width: 250px;
 	padding: 1%;
+	margin: 0.5%;
 }
 
 footer{
@@ -140,11 +149,9 @@ iframe{
     font-weight: bolder;
     font-size: 1.2rem;
 		color: white;
-		margin-left: 30rem;
-		margin-top: 2rem;
+		box-sizing: border-box;
+		margin: auto;
 }
-
-
 
 .form-boton {
     margin-top: 1rem;
@@ -152,7 +159,7 @@ iframe{
     width: 10%;
     height: 2rem;
     background-color: #C37818;
-    border-radius: 1px;
+
     font-size: 1.2rem;
     font-weight: bolder;
     color: white;
@@ -162,4 +169,8 @@ iframe{
 }
 .form-boton:hover {
     background-color: orange;
+}
+
+.comida {
+	width: 60%;
 }

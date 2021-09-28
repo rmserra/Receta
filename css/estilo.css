@@ -20,27 +20,24 @@ nav
 	nav li a, nav li span
 	{
     text-decoration: none;
-		padding: 0px 25px;
-		letter-spacing: 0.20em;
-		font-size: 1.1em;
-		font-weight: 500;
 		color: #FFF4E3;
 		font-family: 'Balsamiq Sans', cursive;
+		letter-spacing: 0.20em;
+		font-size: 1em;
+		font-weight: 500;
+		padding: 0px 25px;
 		box-sizing: border-box;
 	}
 
 	nav li:hover a, nav li.active a, nav li.active span
 	{
-    color: orange;
+    color: white;
 		font-weight: bold;
-		font-size: 1.2em;
-		transition: all .15s ease-in-out;
+		background-color: rgba(255, 165, 49, 0.5);
+		border-radius: 10px;
+		transition: all .4s ease-in-out;
 	}
 
-	nav .current_page_item a
-	{
-		color: red;
-	}
 
 body{
     background-color: orange;
@@ -50,15 +47,20 @@ body{
 
 header{
   text-align: center;
-  width: 100%;
-  margin: auto;
 	font-family: 'Balsamiq Sans', cursive;
 	color: orange;
-	background-color: rgba(0, 0, 0, .7);
-  font-size: 1.7em;
+	font-size: 1.7em;
 	font-weight: bolder;
+	background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+  margin: auto;
 	box-sizing: content-box;
 }
+
+.img2 {
+	display: none;
+}
+
 
 hr {
 	background-color: orange;
@@ -86,14 +88,16 @@ main {
 	width: 60%;
 }
 
+
+
 /*-----SECTION----*/
 section{
+	background-color: rgba(0,0,0,.7);
+	border-radius: 10px;
 	flex: 3;
 	min-width: 250px;
 	padding: 1%;
 	margin: 0.5%;
-	background-color: rgba(0,0,0,.7);
-	border-radius: 10px;
 }
 
 /*---ASIDE--- */
@@ -121,10 +125,6 @@ footer{
   text-align: center;
 }
 
-.recetas{
-	text-align: center;
-	font-weight: bold;
-}
 
 h2 {
 	text-align: center;
@@ -134,6 +134,10 @@ h2 {
 }
 h3{
 	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.2rem;
 }
 
 iframe{
@@ -175,4 +179,47 @@ iframe{
 .comida {
 	width: 60%;
 	border-radius: 3%;
+}
+
+.recetas a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+@media screen and (max-width: 575px) {
+	header{
+		font-size: 1.2em;
+	}
+
+	.mapa {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.video {
+		width: 100%;
+	}
+
+	.img2 {
+		display: block;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.intro img {
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.comida {
+		display: none;
+	}
+
+	.recetas a {
+		font-size: 1.1rem;
+		text-decoration: underline;
+		color: orange;
+	}
 }

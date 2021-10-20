@@ -19,6 +19,7 @@
 		display: block;
 		float: left;
 		text-align: center;
+    margin-top: 2%;
 	}
 
 	nav li a, nav li span
@@ -28,7 +29,7 @@
 		/*letter-spacing: 0.10em;*/
 		font-size: 1.2em;
 		font-weight: 500;
-		padding: 0px 25px;
+		padding: 5px 20px;
 		box-sizing: border-box;
 		color: #e85d04;
 	}
@@ -38,27 +39,26 @@
 
 		font-weight: bolder;
 		background-color: rgba(220,120,0,0.1);
+    color: #e85d04;
 		border-radius: 7px;
-		transition: all .4s ease-in-out;
+		transition: all .5s ease-in-out;
 	}
 
 
 body{
 
 		background-color: #f4f1de;
-
 		background-image: url("../Imagenes/fondo.jpg");
 		background-image: url("https://img3.stockfresh.com/files/s/sanjanovakovic/m/56/2000046_stock-photo-colorful-seamless-pattern-with-cooking-related-symbols.jpg");
-
 		background-attachment: fixed;
 
 }
 
-header{
+h1{
   text-align: center;
 	font-family: 'Balsamiq Sans', cursive;
 	color: #e85d04;
-	font-size: 1.9em;
+	font-size: 4em;
 	font-weight: bold;
 	background-color: #f4f1de;
   width: 98%;
@@ -69,6 +69,13 @@ header{
 	box-sizing: content-box;
 	border: #5c4d3c solid 1px;
 	border-radius: 10px;
+}
+
+.carrousel{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
 }
 
 .img2 {
@@ -149,6 +156,7 @@ footer{
   background-color: black;
 	background-color: #f4f1de;
   color: black;
+  font-weight: bold;
   width: 100%;
   text-align: center;
 	border: #5c4d3c solid 1px;
@@ -230,6 +238,32 @@ textarea{
 	text-decoration: none;
 	color: black;
 	display: block;
+}
+
+.row{
+  background-color: #f4f1de;
+  border: #5c4d3c solid 1px;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+
+.card{
+  margin: 5%;
+  border-radius: 10px;
+  border: #5c4d3c solid 1px;
+  background-color: #FFFDF5;
+}
+
+.card-title{
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.btn:hover {
+  background-color: #FFD000;
 }
 
 @media screen and (max-width: 575px) {

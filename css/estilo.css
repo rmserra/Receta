@@ -162,6 +162,14 @@ footer{
 	border: #5c4d3c solid 1px;
 }
 
+.datos-autor{
+  color: orange;
+}
+
+.datos-autor:hover{
+  color: #FFCC00;
+}
+
 
 h2 {
 	text-align: center;

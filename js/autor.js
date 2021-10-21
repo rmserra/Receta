@@ -1,0 +1,1 @@
+function autor() {alert("HOLAAA! Has tocado el botón de la suerte así que ahora voy a contarte un poquito sobre mí! Me llamo Micaela, tengo 25 años y he creado este sitio como parte de un curso de programación Front-End. ¿No te parece maravilloso? Hay recetas tucumanas y links a recetas de Paulina Cocina, ¿qué más se le podría pedir? Un gusto! :) <3")}
